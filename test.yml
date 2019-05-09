@@ -1,18 +1,21 @@
-default:
-  property: just a property's default value
+all:
+  profiles:
+    property: default value
 ---
 spring:
   profiles: profileA
   
-just:
+profile:
   a:
-    property: profile A
+    property:
+      only: profile A
 ---
 spring:
   profiles: profileB
   
-just:
-  a:
-    property: profile B
+profile:
+  b:
+    property:
+      only: profile B
   
 
