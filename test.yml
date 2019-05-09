@@ -1,3 +1,17 @@
 just:
   a:
-    property: just a property's value
+    property: just a property's default value
+---
+spring:
+  profiles: profileA
+just:
+  a:
+    property: profile A
+---
+spring:
+  profiles: profileB
+just:
+  a:
+    property: profile B
+  
+
